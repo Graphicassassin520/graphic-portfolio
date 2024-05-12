@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to the custom CSS file -->
+</head>
+<body class="bg-black text-white">
+    <header class="text-center py-4">
+        <h1 class="text-3xl font-bold text-gold">Your Name - Portfolio</h1>
+        <nav>
+            <ul class="flex justify-center space-x-4">
+                <li><a href="#graphic-design" class="text-silver">Graphic Design</a></li>
+                <li><a href="#video-production" class="text-silver">Video Production</a></li>
+                <li><a href="#logos" class="text-silver">Logos</a></li>
+                <li><a href="#original-art" class="text-silver">Original Art</a></li>
+                <li><a href="#contact" class="text-silver">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Graphic Design Section -->
+        <section id="graphic-design" class="py-8">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-bold text-gold mb-4">Graphic Design</h2>
+                <div class="grid grid-cols-3 gap-4">
+                    <!-- Placeholder for graphic design items -->
+                    <div class="bg-silver rounded p-4">
+                        <img src="https://via.placeholder.com/300" alt="Project Name">
+                        <h3 class="text-xl text-white mt-2">Project Title</h3>
+                        <p class="text-gray-300">Short project description.</p>
+                    </div>
+                    <!-- Repeat for other projects -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Production Section -->
+        <section id="video-production" class="py-8">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-bold text-gold mb-4">Video Production</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- YouTube embed -->
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/z5RB6-Ik3dM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Embedded YouTube Video"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Logos Section -->
+        <section id="logos" class="py-8">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-bold text-gold mb-4">Logos</h2>
+                <div class="flex flex-wrap justify-center items-center">
+                    <!-- Placeholder for logo items -->
+                    <img src="https://via.placeholder.com/150x150" alt="Logo Name" class="m-2">
+                    <!-- Repeat for other logos -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Original Artwork Section -->
+        <section id="original-art" class="py-8">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-bold text-gold mb-4">Original Artwork</h2>
+                <div class="grid grid-cols-3 gap-4">
+                    <!-- Placeholder for artwork -->
+                    <img src="https://via.placeholder.com/300" alt="Artwork Name" class="rounded shadow">
+                    <!-- Repeat for other artworks -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-8 bg-gray-900">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-bold text-gold mb-4">Contact Me</h2>
+                <form action="submit_form.php" method="post">
+                    <input type="text" name="name" placeholder="Your Name" class="p-2 m-2 w-full bg-gray-800 text-white">
+                    <input type="email" name="email" placeholder="Your Email" class="p-2 m-2 w-full bg-gray-800 text-white">
+                    <textarea name="message" placeholder="Your Message" class="p-2 m-2 w-full h-40 bg-gray-800 text-white"></textarea>
+                    <button type="submit" class="p-2 bg-gold text-black font-bold">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center py-4 mt-4 border-t border-gray-700">
+        <p>© 2024 Your Name. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
